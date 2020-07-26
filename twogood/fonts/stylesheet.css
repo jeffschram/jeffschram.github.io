@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('BlissPro-Bold.woff2') format('woff2'),
+        url('BlissPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Rust Sans';
+    src: url('NexaRustSans-Black.woff2') format('woff2'),
+        url('NexaRustSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('BlissPro-Light.woff2') format('woff2'),
+        url('BlissPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Rust Sans  02';
+    src: url('NexaRustSans02-Regular2.woff2') format('woff2'),
+        url('NexaRustSans02-Regular2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('BlissPro.woff2') format('woff2'),
+        url('BlissPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('NexaHeavy.woff2') format('woff2'),
+        url('NexaHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

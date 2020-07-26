@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  transition: opacity 0.25s;
+}
+a:hover,
+a:focus {
+  opacity: 0.75;
+}
+
+html {
+  font-size: 3vw;
+}
+
+@media (min-width: 510px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 115%;
+  }
+}
+
+
+body {
+  color: #000000;
+  background: url('../images/Background.jpg');
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  width: 12rem;
+  height: 9rem;
+  background: url('../images/BackgroundCorner.png');
+  background-size: 100% 100%;
+}
+
+@media (min-width: 510px) {
+  body::before {
+    width: 17rem;
+    height: 13rem;
+  }
+}
+
+.Socials {
+  position: absolute;
+  right: 1rem;
+  top: 5.5rem;
+  z-index: 2;
+}
+
+.SocialLink {
+  display: block;
+  width: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.ComingSoon {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 8.5rem;
+  width: 3rem;
+  height: 17rem;
+  background: url('../images/ComingSoon.png');
+  background-size: 100% 100%;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ComingSoon span {
+  font-family: 'Bliss Pro';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+
+}
+
+.Site {
+  position: relative;
+  z-index: 1; 
+}
+@media (min-width: 768px) {
+  .Site {
+    padding-top: calc((100vh - 50rem) / 2);
+  }
+}  
+
+
+.SiteWrapper {
+  position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .SiteWrapper {    
+    max-width: 47.5rem;
+    background: yellow;
+  }
+}
+
+.Aside {
+  padding-top: 3rem;
+  margin: 0 auto;
+  max-width: 21rem;
+}
+
+@media (min-width: 768px) {
+  .Aside {
+    padding: 0;
+    position: absolute;
+    width: 21rem;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .Footer {
+    float: right;
+    width: 32rem;
+  }
+}
+
+.Hero {  
+  padding-top: 5rem;
+}
+@media (min-width: 768px) {
+  .Hero {
+    padding-top: 1rem;
+    float: right;
+    width: 32rem;
+  }
+}
+
+
+.HeroTitle {
+  font-family: 'Nexa Rust Sans';
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.HeroTitle span {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.HeroImage {
+  max-width: 21.5rem;
+  margin: 0 auto;
+}
+
+.HeroLead {
+  font-family: 'Nexa Rust Sans';
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0;
+  margin: -0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.HeroBody {
+  font-family: 'Bliss Pro';
+  font-weight: bold;
+  font-size: 0.71875rem;
+  margin: 0 auto;
+  max-width: 21rem;
+  text-align: center;
+}
+
+.PageMain {
+  position: relative;
+  margin: 1.25rem auto 0;
+  max-width: 14rem;
+}
+
+.Features {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Feature {  
+  width: calc(25% - 0.65rem);
+}
+
+.FeatureImage { position: relative; }
+
+.FeatureBody { 
+  font-family: 'Bliss Pro';
+  font-size: .5625rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.FeaturesList { 
+  position: absolute;
+  top: 0.25rem;
+  left: 100%;
+  margin-left: 1.5rem;
+  width: 6.5rem;
+}
+
+.FinePrint {
+  margin-top: 0.5rem;
+  font-family: 'Bliss Pro';
+  font-size: 9px;
+  letter-spacing: -0.05em;
+}
+
+.ContactLink { 
+  position: relative;
+  font-family: 'Nexa Rust Sans';
+  font-size: 0.9375rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}
+.ContactLink span {
+  position: relative;
+}
+.ContactLink::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 38%;
+  width: 9rem;
+  height: 6rem;
+  background: url('../images/ContactSplotch.png');
+  background-size: cover;
+  pointer-events: none;
+}
+
+.PrivacyLink { 
+  position: relative;
+  text-align: center; 
+  display: block;
+  font-size: .5625rem;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 1rem;
+}

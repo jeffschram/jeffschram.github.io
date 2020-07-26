@@ -19,7 +19,7 @@ a:focus {
 }
 
 html {
-  font-size: 3vw;
+  font-size: 3vw;  
 }
 
 @media (min-width: 510px) {
@@ -37,8 +37,8 @@ html {
 
 body {
   color: #000000;
-  background: url('../images/Background.jpg');
-  background-size: cover;
+  min-height: 100vh;
+  background: url('../images/Background.jpg');  
 }
 body::before {
   content: "";
@@ -202,7 +202,7 @@ body::before {
 .PageMain {
   position: relative;
   margin: 1.25rem auto 0;
-  max-width: 14rem;
+  max-width: 16rem;
 }
 
 .Features {
@@ -212,17 +212,19 @@ body::before {
 
 }
 
-.Feature {  
-  width: calc(25% - 0.65rem);
+.Feature {
+  width: calc(25% - 0.75rem);
 }
 
 .FeatureImage { position: relative; }
 
-.FeatureBody { 
+.FeatureBody {
   font-family: 'Bliss Pro';
   font-size: .5625rem;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .FeaturesList { 
@@ -234,7 +236,7 @@ body::before {
 }
 
 .FinePrint {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-family: 'Bliss Pro';
   font-size: 9px;
   letter-spacing: -0.05em;
@@ -266,11 +268,13 @@ body::before {
   pointer-events: none;
 }
 
-.PrivacyLink { 
+.PrivacyLink {
   position: relative;
-  text-align: center; 
+  text-align: center;
   display: block;
+  font-family: 'Bliss Pro';
   font-size: .5625rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;

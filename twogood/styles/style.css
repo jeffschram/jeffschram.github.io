@@ -22,15 +22,26 @@ html {
   font-size: 3vw;  
 }
 
-@media (min-width: 510px) {
+@media (min-width: 31.875em) {
   html {
     font-size: 100%;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 48em) {
   html {
-    font-size: 115%;
+    font-size: 100%;
+  }
+}
+@media (min-width: 68.75em) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media (min-width: 87.5em) {
+  html {
+    font-size: 125%;
   }
 }
 
@@ -55,8 +66,13 @@ body::before {
   background: url('../images/BackgroundCorner.png');
   background-size: 100% 100%;
 }
-
-@media (min-width: 510px) {
+@media (min-width: 31.875em) {
+  body::before {
+    width: 12rem;
+    height: 9rem;
+  }
+}
+@media (min-width: 61em) {
   body::before {
     width: 17rem;
     height: 13rem;
@@ -108,7 +124,7 @@ body::before {
   position: relative;
   z-index: 1; 
 }
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .Site {
     padding-top: calc((100vh - 50rem) / 2);
   }
@@ -138,7 +154,6 @@ body::before {
 .Page li {
   line-height: 1.5;
 }
-
 .PageTitle {
   font-family: 'Nexa Rust Sans';
 }
@@ -148,10 +163,15 @@ body::before {
   position: relative;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
-  .SiteWrapper {    
+@media (min-width: 48em) {
+  .SiteWrapper {
     max-width: 47.5rem;
-    background: yellow;
+  }
+}
+@media (min-width: 61.875rem) {
+  .SiteWrapper {
+    max-width: 24rem;
+    transform: translateX(15%);
   }
 }
 
@@ -160,8 +180,7 @@ body::before {
   margin: 0 auto;
   max-width: 21rem;
 }
-
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .Aside {
     padding: 0;
     position: absolute;
@@ -169,19 +188,32 @@ body::before {
     top: 0;
     left: 0;
   }
+} 
+@media (min-width: 61.875rem) {
+  .Aside {
+    left: auto;
+    right: 100%;
+    margin-right: 0;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .Footer {
     float: right;
     width: 32rem;
+  }
+}
+@media (min-width: 61.875rem) {
+  .Footer {
+    width: 24rem;
   }
 }
 
 .Hero {  
   padding-top: 5rem;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 48em) {
   .Hero {
     padding-top: 1rem;
     float: right;
@@ -189,6 +221,11 @@ body::before {
   }
 }
 
+@media (min-width: 61.875rem) {
+  .Hero {
+    width: 24rem;
+  }
+}
 
 .HeroTitle {
   font-family: 'Nexa Rust Sans';
@@ -242,7 +279,6 @@ body::before {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-
 }
 
 .Feature {

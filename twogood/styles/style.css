@@ -38,7 +38,11 @@ html {
 body {
   color: #000000;
   min-height: 100vh;
-  background: url('../images/Background.jpg');  
+  background: url('../images/Background.jpg');
+  background-size: cover;
+}
+body.Utility {
+  background: #F4F4F2;
 }
 body::before {
   content: "";
@@ -108,7 +112,36 @@ body::before {
   .Site {
     padding-top: calc((100vh - 50rem) / 2);
   }
-}  
+}
+
+.Page {
+  max-width: 44rem;
+  padding: 0 2rem;
+  margin: 0 auto 4rem;
+  font-family: 'Bliss Pro';  
+}
+.Page > * + * {
+  margin-top: 0.5em;
+}
+.Page a {
+  color: #7653B6;
+}
+.Page h1 {
+  margin-bottom: 1em;
+}
+.Page h2 {
+  margin-top: 1.5em;
+}
+.Page ul {
+  padding-left: 1em;
+}
+.Page li {
+  line-height: 1.5;
+}
+
+.PageTitle {
+  font-family: 'Nexa Rust Sans';
+}
 
 
 .SiteWrapper {

@@ -19,30 +19,54 @@ a:focus {
 }
 
 html {
-  font-size: 3vw;  
+  font-size: 3vw;
 }
+/* html::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: yellow;
+} */
 
 @media (min-width: 31.875em) {
   html {
     font-size: 100%;
   }
+  /* html::after { background-color: green; } */
 }
 
 @media (min-width: 48em) {
   html {
     font-size: 100%;
   }
+  /* html::after { background-color: blue; } */
 }
 @media (min-width: 68.75em) {
   html {
     font-size: 110%;
   }
+  /* html::after { background-color: purple; } */
 }
-
+@media (min-width: 68.75em) and (max-height: 39.5em ) {
+  html {
+    font-size: 2.75vh;
+  }
+  /* html::after { background-color: lightblue; } */
+}
 @media (min-width: 87.5em) {
   html {
-    font-size: 125%;
+    font-size: 120%;
   }
+  /* html::after { background-color: red; } */
+}
+@media (min-width: 87.5em) and (max-height: 45em ) {
+  html {
+    font-size: 2.75vh;
+  }
+  /* html::after { background-color: lightgreen; } */
 }
 
 
@@ -99,24 +123,20 @@ body::before {
   top: 8.5rem;
   width: 3rem;
   height: 17rem;
-  background: url('../images/ComingSoon.png');
-  background-size: 100% 100%;
-  writing-mode: vertical-rl;
-  text-orientation: sideways-right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: url('../images/ComingSoonWithText.png');
+  background-size: 100% 100%; 
+  display: block;
+  overflow: hidden; 
 }
 .ComingSoon span {
-  font-family: 'Bliss Pro';
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: white;
-  display: block;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 
 }
 

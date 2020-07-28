@@ -44,6 +44,12 @@ html {
   }
   /* html::after { background-color: blue; } */
 }
+@media (min-width: 48em) and (max-height: 39.5em ) {
+  html {
+    font-size: 2.75vh;
+  }
+  /* html::after { background-color: lightblue; } */
+}
 @media (min-width: 68.75em) {
   html {
     font-size: 110%;
@@ -164,9 +170,21 @@ body::before {
 }
 .Page h1 {
   margin-bottom: 1em;
+  font-family: 'Nexa Rust Sans';
+  font-size: 1.25rem;
 }
 .Page h2 {
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: 'Nexa Rust Sans';
+  font-size: 1rem;
+}
+.Page h3 {
+  margin-bottom: 0.75em;
+}
+.Page ul + h3,
+.Page p + h3 {
+  margin-top: 2em;
 }
 .Page ul {
   padding-left: 1em;
@@ -295,6 +313,13 @@ body::before {
   max-width: 16rem;
 }
 
+.PageSecondary {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
 .Features {
   list-style-type: none;
   display: flex;
@@ -315,6 +340,14 @@ body::before {
   font-weight: 600;
   line-height: 1;
 }
+.FeatureBody span {
+  position: relative;
+}
+.FeatureBody span sup {
+  position: absolute;
+  left: 100%;
+  top: 0.175em;
+}
 
 .FeaturesList { 
   position: absolute;
@@ -327,28 +360,23 @@ body::before {
 .FinePrint {
   margin-top: 1rem;
   font-family: 'Bliss Pro';
-  font-size: 9px;
+  font-size: 0.5rem;
+  text-align: center;
   letter-spacing: -0.05em;
 }
+.FinePrint + .FinePrint {
+  margin-top: 0.1rem;
+}
 
-.ContactLink { 
+.Footer {
   position: relative;
-  font-family: 'Nexa Rust Sans';
-  font-size: 0.9375rem;
   text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-  display: block;
   margin-top: 1rem;
 }
-.ContactLink span {
-  position: relative;
-}
-.ContactLink::before {
+.Footer::before {
   content: "";
   position: absolute;
-  top: -100%;
+  top: -1rem;
   left: 38%;
   width: 9rem;
   height: 6rem;
@@ -357,10 +385,10 @@ body::before {
   pointer-events: none;
 }
 
-.PrivacyLink {
+.Footer a {
   position: relative;
   text-align: center;
-  display: block;
+  display: inline-block;
   font-family: 'Bliss Pro';
   font-size: .5625rem;
   font-weight: 600;
@@ -368,4 +396,7 @@ body::before {
   color: #000000;
   text-decoration: none;
   margin-top: 1rem;
+}
+.Footer a + a {
+  margin-left: 2rem;
 }
